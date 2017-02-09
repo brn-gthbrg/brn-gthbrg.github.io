@@ -11,6 +11,7 @@ h1 {
 #menu-options > li {
   display: table-cell;
   background-color: #4cbb17;
+  color: black;
   font-weight: bold;
   padding: 15px;
 
