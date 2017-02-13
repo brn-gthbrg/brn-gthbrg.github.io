@@ -1,36 +1,31 @@
 body {
   background: #009900;
   color: #FFFFF0;
-  font: helvetica;
-  width: 960px;
+  font: Arial;
+  max-width: 960px;
+  min-width: 300px;
 }
 
 h1 {
   text-align: center;
-  border: 2px;
-}
-
-#menu-options {
-  border: 10px;
+  border: 1px;
   border-color: #000000;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-#menu-options > li {
+.menu-options {
+  text-align: center;
+}
+
+.menu-options > li {
   display: inline-block;
   vertical-align: top;
   background-color: #4cbb17;
   color: black;
   font-weight: bold;
   padding: 15px;
-  border: 10px;
-  border-color: #000000;
 }
 
-#menu-options:hover {
+.menu-options:hover {
   color: #FF00FF;
 }
 
@@ -38,7 +33,8 @@ h1 {
     display: block;
     margin: auto;
     width: 30%;
-
+    padding: 10px;
+    padding-bottom: 20px;
 }
 
 #table {
@@ -55,6 +51,13 @@ h1 {
 
 .content-head {
   font-size: 20pt;
+  padding: 10px;
+}
+
+.main-text {
+  background-image: url("underwater.jpg");
+  color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 strong {
@@ -64,4 +67,18 @@ strong {
 
 p {
   padding: 10px;
+}
+
+a:link {
+  color: #3a4eea;
+}
+
+a:visited {
+  color: #3a95ea;
+}
+
+@media screen and (max-width: 500px) {
+  #diving-board {
+    display: none;
+  }
 }
